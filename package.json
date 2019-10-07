@@ -1,0 +1,28 @@
+{
+  "name": "travelchapter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.18.0"
+  },
+  "devDependencies": {
+    "commander": "^2.20.0",
+    "del": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "opentype.js": "^0.11.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

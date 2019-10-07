@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+header {
+  background-color: #233d50;
+  color: white;
+  height: 60px; }
+  header nav {
+    display: flex;
+    justify-content: space-between; }
+    header nav .logo {
+      height: 60px;
+      padding: 0.5rem; }
+      header nav .logo a img {
+        height: 100%; }
+    header nav ul {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem; }
+      header nav ul li {
+        padding-right: 2rem; }
+      header nav ul .owner-account {
+        background-color: #00b2a9;
+        padding: 0.5rem; }
+
+.hero {
+  height: 600px;
+  background: mistyrose; }
+
+.page-content {
+  height: 600px; }
+
+footer {
+  height: 330px;
+  background-color: #233d50; }
+
+.sticky {
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  height: 64px;
+  background-color: whitesmoke; }
+  .sticky .sticky-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%; }
+    .sticky .sticky-container .letting-guide {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      color: white;
+      background-color: #fe5000; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  color: red; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  text-decoration: none;
+  color: blue; }
+
+a:focus {
+  text-decoration: none;
+  color: yellow; }
+
+a:hover, a:active {
+  text-decoration: none;
+  color: black; }
+
+/*# sourceMappingURL=app.css.map */

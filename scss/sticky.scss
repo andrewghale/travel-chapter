@@ -1,0 +1,21 @@
+.sticky {
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+    height: 64px;
+    background-color: rgb(245, 245, 245);
+    .sticky-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 100%;
+        .letting-guide {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: white;
+            background-color: rgb(254, 80, 0);
+        }
+    }
+}
