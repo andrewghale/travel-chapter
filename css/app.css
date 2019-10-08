@@ -8,11 +8,17 @@ body {
   margin: 0;
   padding: 0; }
 
+h3 {
+  font-size: 3rem;
+  color: #233d50; }
+
 ul {
   list-style: none; }
 
 a {
   text-decoration: none; }
+  a:visited {
+    color: inherit; }
 
 header {
   background-color: #233d50;
@@ -70,7 +76,25 @@ header {
     font-size: 16px; }
 
 .page-content {
-  height: 600px; }
+  display: flex;
+  height: 600px;
+  max-width: 1170px;
+  margin: 5rem auto; }
+  .page-content .welcome-montage {
+    padding: 1rem;
+    max-height: 600px;
+    max-width: 50%; }
+    .page-content .welcome-montage img {
+      max-width: 100%;
+      height: auto; }
+  .page-content .welcome-content {
+    color: #616161;
+    width: 50%;
+    padding-left: 1rem;
+    margin-top: -2rem;
+    line-height: 1.4rem; }
+    .page-content .welcome-content h3 {
+      margin: 4rem 0 3rem 0; }
 
 footer {
   color: white;

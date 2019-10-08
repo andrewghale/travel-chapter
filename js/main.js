@@ -4,8 +4,5 @@ $(document).ready( function() {
         if($(window).scrollTop() > topOfOthDiv) {
             $("#sticky-hide").addClass("show");
         }
-        // else{
-        //     $("#sticky-hide").fadeOut("slow");
-        // }
     });
 });

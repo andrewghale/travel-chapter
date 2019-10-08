@@ -41,5 +41,27 @@
 }
 
 .page-content {
+    display: flex;
     height: 600px;
+    max-width: 1170px;
+    margin: 5rem auto;
+    .welcome-montage {
+        padding: 1rem;
+        max-height: 600px;
+        max-width: 50%;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .welcome-content {
+        color: $grey;
+        width: 50%;
+        padding-left: 1rem;
+        margin-top: -2rem;
+        line-height: 1.4rem;
+        h3 {
+            margin: 4rem 0 3rem 0;
+        }
+    }
 }
