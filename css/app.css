@@ -14,67 +14,6 @@ ul {
 a {
   text-decoration: none; }
 
-a:visited {
-  text-decoration: none;
-  color: white; }
-
-a:hover {
-  text-decoration: none;
-  color: blue; }
-
-a:focus {
-  text-decoration: none;
-  color: yellow; }
-
-a:hover, a:active {
-  text-decoration: none;
-  color: black; }
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
-  * Show the overflow in IE.
-  * 1. Show the overflow in Edge.
-  */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
-  * Remove the inheritance of text transform in Edge, Firefox, and IE.
-  * 1. Remove the inheritance of text transform in Firefox.
-  */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
-  * Correct the inability to style clickable types in iOS and Safari.
-  */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
 header {
   background-color: #233d50;
   color: white;
@@ -99,12 +38,12 @@ header {
 
 .hero-container .hero {
   height: 600px;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25)), url(../img/hero.jpg);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
   background-size: cover; }
 
 .hero-container .hero-content {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 15%; }
   .hero-container .hero-content .brand-call {
     color: #fe5000;
@@ -112,12 +51,15 @@ header {
     font-weight: bold;
     text-transform: uppercase; }
   .hero-container .hero-content h1 {
-    color: white; }
+    color: white;
+    font-weight: bold; }
   .hero-container .hero-content p {
     color: white; }
   .hero-container .hero-content button {
     background-color: #fe5000;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
     cursor: pointer;
     border: none;
     color: white;
@@ -131,10 +73,40 @@ header {
   height: 600px; }
 
 footer {
+  color: white;
+  font-size: 0.75rem;
   height: 330px;
   background-color: #233d50; }
+  footer .footer-top-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    height: 60%;
+    margin: 0 auto; }
+    footer .footer-top-container .col-5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-transform: uppercase; }
+  footer hr {
+    max-width: 1170px;
+    margin: 1rem auto; }
+  footer .footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: auto; }
+    footer .footer-bottom-container .social-links {
+      height: 18px; }
+      footer .footer-bottom-container .social-links span {
+        margin: 0 0.5rem; }
+        footer .footer-bottom-container .social-links span img {
+          height: 100%; }
 
 .sticky {
+  opacity: 0;
+  transition: all 1s ease;
   width: 100%;
   position: sticky;
   bottom: 0px;
@@ -145,12 +117,21 @@ footer {
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-    height: 100%; }
+    height: 100%;
+    color: #233d50; }
     .sticky .sticky-container .letting-guide {
       display: flex;
       align-items: center;
       padding: 1rem;
       color: white;
-      background-color: #fe5000; }
+      background-color: #fe5000;
+      margin: 0.5rem; }
+
+.show {
+  opacity: 1;
+  transition: all 1s ease; }
+
+.hide {
+  opacity: 0; }
 
 /*# sourceMappingURL=app.css.map */

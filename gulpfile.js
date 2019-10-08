@@ -11,7 +11,7 @@ var plumber = require("gulp-plumber");
 
 gulp.task("concatScripts", function () {
   return gulp
-    .src("js/main.js")
+    .src(["js/jquery.js", "js/main.js"])
     .pipe(plumber())
     .pipe(maps.init())
     .pipe(concat("app.js"))
