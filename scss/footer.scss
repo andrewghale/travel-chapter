@@ -1,5 +1,5 @@
 footer {
-    color: white;
+    color: $white;
     font-size: 0.75rem;
     height: 330px;
     background-color: $dark-blue;
@@ -10,10 +10,23 @@ footer {
         height: 60%;
         margin: 0 auto;
         .col-5 {
+            font-family: 'Josefin Sans', sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-transform: uppercase;
+            a {
+                text-transform: uppercase;
+                color: $white;
+                transition: color 0.1s ease-in-out;
+                &:hover {
+                    color: $white-hover;
+                    transition: color 0.1s ease-in-out;
+                }
+            }
+            &.copyright-container {
+                font-family: 'Montserrat', sans-serif;
+            }
+
         }
     }
     hr {
@@ -23,9 +36,12 @@ footer {
     .footer-bottom-container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         max-width: 1170px;
         margin: 0 auto;
         height: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.65rem;
         .social-links {
             height: 18px;
             span {
