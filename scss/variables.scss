@@ -1,3 +1,5 @@
+
+// Colors
 $dark-blue: rgb(35, 61, 80);
 
 $orange: rgb(254, 80, 0);
@@ -9,4 +11,11 @@ $grey: #616161;
 $white: rgb(255, 255, 255);
 $white-hover: rgb(200, 200, 200);
 
-$hr: rgb(120, 120, 120);
+$hr-dark: rgb(67, 85, 99);
+$hr-light: rgb(229, 229, 229);
+
+// Breakpoints
+$bp-large: 992px;
+$bp-tablet: 768px;
+$bp-phone: 500px;
+$bp-xs: 415px;

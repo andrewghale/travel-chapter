@@ -13,9 +13,13 @@ body {
     padding: 0;
 }
 
-h3 {
-    font-size: 3rem;
+h2 {
+    font-size: 2rem;
     color: $dark-blue;
+}
+
+p {
+    color: $grey;
 }
 
 ul {
@@ -37,5 +41,5 @@ a[href^="tel:"] {
 }
 
 hr {
-    border: 0.5px solid $hr;
+    border: 0.5px solid $hr-light;
 }

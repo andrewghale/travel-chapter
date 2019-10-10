@@ -12,9 +12,12 @@ body {
   margin: 0;
   padding: 0; }
 
-h3 {
-  font-size: 3rem;
+h2 {
+  font-size: 2rem;
   color: #233d50; }
+
+p {
+  color: #616161; }
 
 ul {
   list-style: none;
@@ -31,7 +34,7 @@ a[href^="tel:"] {
   text-decoration: none; }
 
 hr {
-  border: 0.5px solid #787878; }
+  border: 0.5px solid #e5e5e5; }
 
 header {
   background-color: #233d50;
@@ -74,7 +77,8 @@ header {
       header nav ul .owner-account {
         background-color: #00b2a9;
         height: 32px;
-        padding: 0 1.5rem; }
+        padding: 0 1.5rem;
+        text-align: center; }
         header nav ul .owner-account:hover {
           opacity: 0.8;
           transition: opacity 0.1s ease-in-out; }
@@ -89,14 +93,21 @@ header {
   height: 600px;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
   background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .hero-container .hero {
+      height: 450px; } }
 
 .hero-container .hero-content {
   position: absolute;
   top: 30%;
   left: 15%;
   max-width: 450px; }
+  @media screen and (max-width: 768px) {
+    .hero-container .hero-content {
+      font-size: 0.8rem;
+      left: 9%; } }
   .hero-container .hero-content .brand-call {
-    color: #fe5000;
+    color: #ff7a3c;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase; }
@@ -123,25 +134,72 @@ header {
       background-color: #ff7a3c; }
 
 .page-content {
-  display: flex;
-  height: 600px;
   max-width: 1170px;
   margin: 5rem auto; }
-  .page-content .welcome-montage {
-    padding: 1rem;
-    max-height: 600px;
-    max-width: 50%; }
-    .page-content .welcome-montage img {
-      max-width: 100%;
-      height: auto; }
-  .page-content .welcome-content {
-    color: #616161;
-    width: 50%;
-    padding-left: 1rem;
-    margin-top: -2rem;
-    line-height: 1.4rem; }
-    .page-content .welcome-content h3 {
-      margin: 4rem 0 3rem 0; }
+  .page-content .content-block {
+    display: flex;
+    height: 600px;
+    margin-right: 2rem; }
+    @media screen and (max-width: 992px) {
+      .page-content .content-block {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        margin: 0; } }
+    .page-content .content-block .welcome-montage {
+      padding: 1rem;
+      max-height: 600px;
+      max-width: 50%; }
+      .page-content .content-block .welcome-montage img {
+        max-width: 100%;
+        height: auto; }
+    .page-content .content-block .welcome-content {
+      width: 50%;
+      padding-left: 1rem;
+      margin-top: -2rem;
+      line-height: 1.4rem; }
+      @media screen and (max-width: 992px) {
+        .page-content .content-block .welcome-content {
+          width: 700px; } }
+      @media screen and (max-width: 768px) {
+        .page-content .content-block .welcome-content {
+          width: auto;
+          margin: 0 1rem; } }
+      .page-content .content-block .welcome-content h3 {
+        margin: 4rem 0 3rem 0; }
+
+#why-choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #why-choose p {
+    text-align: center;
+    width: 50%; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px; }
+  .grid .grid-item-container {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .grid .grid-item-container .image-container {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .grid .grid-item-container .image-container img {
+        height: auto;
+        max-width: 100%; }
+    .grid .grid-item-container h4 {
+      text-align: center;
+      width: 50%;
+      margin-top: 0; }
 
 footer {
   color: white;
@@ -168,9 +226,12 @@ footer {
           transition: color 0.1s ease-in-out; }
       footer .footer-top-container .col-5.copyright-container {
         font-family: 'Montserrat', sans-serif; }
+        footer .footer-top-container .col-5.copyright-container .copyright {
+          color: white; }
   footer hr {
     max-width: 1170px;
-    margin: 1rem auto; }
+    margin: 1rem auto;
+    border: 0.5px solid #435563; }
   footer .footer-bottom-container {
     display: flex;
     justify-content: space-between;
@@ -180,6 +241,8 @@ footer {
     height: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65rem; }
+    footer .footer-bottom-container p {
+      color: white; }
     footer .footer-bottom-container .social-links {
       height: 18px; }
       footer .footer-bottom-container .social-links span {
