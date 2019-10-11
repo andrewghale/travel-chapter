@@ -1,8 +1,10 @@
-$(document).ready( function() {
-    var topOfOthDiv = $("#sticky-show").offset().top;
+$(document).ready(function() {
+    const $topOfOtheDiv = $("#sticky-show").offset().top;
+    const $stickyNav = $('#sticky-hide');
+    const $window = $(window);
     $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) {
-            $("#sticky-hide").addClass("show");
+        if($window.scrollTop() > $topOfOtheDiv) {
+            $stickyNav.addClass("show");
         }
     });
 });

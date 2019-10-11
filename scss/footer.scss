@@ -1,30 +1,63 @@
 footer {
+    display: flex;
+    flex-direction: column;
     color: $white;
     font-size: 0.75rem;
     height: 330px;
     background-color: $dark-blue;
+    @media screen and (max-width: $bp-large) {
+        height: fit-content;
+    }
     .footer-top-container {
         display: flex;
         justify-content: space-between;
         max-width: 1170px;
         height: 60%;
+        width: 90%;
         margin: 0 auto;
-        .col-5 {
-            font-family: 'Josefin Sans', sans-serif;
+        @media screen and (max-width: $bp-large) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .col-footer {
+            font-family: $main-font;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            a {
-                text-transform: uppercase;
-                color: $white;
-                transition: color 0.1s ease-in-out;
-                &:hover {
-                    color: $white-hover;
+            width: auto;
+            @media screen and (max-width: $bp-large) {
+                width: 100%;
+                align-items: center;
+            }
+            p {
+                @media screen and (max-width: $bp-large) {
+                    margin: 0.3rem auto;
+                }
+                a {
+                    text-transform: uppercase;
+                    color: $white;
                     transition: color 0.1s ease-in-out;
+                    &:hover {
+                        color: $white-hover;
+                        transition: color 0.1s ease-in-out;
+                    }
                 }
             }
             &.copyright-container {
-                font-family: 'Montserrat', sans-serif;
+                display: flex;
+                font-family: $secondary-font;
+                @media screen and (max-width: $bp-large) {
+                    width: 235px;
+                    margin: 2rem auto;
+                    order: -1;
+                }
+                a {
+                    height: fit-content;
+                    img {
+                        width: 235px;
+                    }
+                }
                 .copyright {
                     color: $white;
                 }
@@ -44,13 +77,28 @@ footer {
         max-width: 1170px;
         margin: 0 auto;
         height: auto;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $secondary-font;
         font-size: 0.65rem;
+        @media screen and (max-width: $bp-desktop) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @media screen and (max-width: $bp-large) {
+            justify-content: center;
+            height: 180px;
+        }
         p {
             color: $white;
+            @media screen and (max-width: $bp-large) {
+                margin: 0 5rem;
+            }
         }
         .social-links {
             height: 18px;
+            @media screen and (max-width: $bp-large) {
+                height: 25px;
+                margin: 2rem auto;
+            }
             span {
                 margin: 0 0.5rem;
                 img {

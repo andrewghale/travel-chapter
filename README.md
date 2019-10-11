@@ -13,7 +13,7 @@ To include header hamburger icon for small screens
 Make header responsive
 
 Main Footer:
-Make responsive ()
+Make responsive
 
 Sticky Footer:
 Make the sticky footer disappear again when scrolling to the top of the page

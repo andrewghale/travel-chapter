@@ -1,5 +1,12 @@
+// Fonts
+$main-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
 
 // Colors
+$white: white;
+$black: black;
+
 $dark-blue: rgb(35, 61, 80);
 
 $orange: rgb(254, 80, 0);
@@ -15,6 +22,7 @@ $hr-dark: rgb(67, 85, 99);
 $hr-light: rgb(229, 229, 229);
 
 // Breakpoints
+$bp-desktop: 1200px;
 $bp-large: 992px;
 $bp-tablet: 768px;
 $bp-phone: 500px;

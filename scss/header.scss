@@ -2,7 +2,7 @@ header {
     background-color: $dark-blue;
     color: $white;
     height: 60px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $main-font;
     nav {
         display: flex;
         justify-content: space-between;
@@ -21,6 +21,14 @@ header {
                 }
             }
         }
+        .toggleNav {
+            display: none;
+            font-size: 2.3rem;
+            margin: 0 1rem 0 0;
+            @media screen and (max-width: $bp-large) {
+                display: block;
+            }
+        }
         ul {
             display: flex;
             font-size: 0.7rem;
@@ -28,6 +36,9 @@ header {
             margin-right: 1rem;
             text-transform: uppercase;
             letter-spacing: 0.1rem;
+            @media screen and (max-width: $bp-large) {
+                display: none;
+            }
             .nav-link {
                 height: 100%;
                 display: flex;

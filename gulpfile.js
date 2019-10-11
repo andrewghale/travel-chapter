@@ -1,13 +1,13 @@
 "use strict";
 
-var gulp = require("gulp");
-var concat = require("gulp-concat");
-var uglify = require("gulp-uglify-es").default;
-var rename = require("gulp-rename");
-var sass = require("gulp-sass");
-var maps = require("gulp-sourcemaps");
-var del = require("del");
-var plumber = require("gulp-plumber");
+const gulp = require("gulp");
+const concat = require("gulp-concat");
+const uglify = require("gulp-uglify-es").default;
+const rename = require("gulp-rename");
+const sass = require("gulp-sass");
+const maps = require("gulp-sourcemaps");
+const del = require("del");
+const plumber = require("gulp-plumber");
 
 gulp.task("concatScripts", function () {
   return gulp
@@ -39,7 +39,7 @@ gulp.task("compileSass", function () {
 
 gulp.task("watchFiles", function () {
 
-  var files = 'js/main.js';
+  const files = 'js/main.js';
 
   gulp.watch("scss/**/*.scss", gulp.parallel("compileSass"));
   gulp.watch(files, gulp.parallel("concatScripts"));

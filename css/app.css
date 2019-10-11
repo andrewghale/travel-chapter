@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 * {
   box-sizing: border-box; }
   *::selection {
@@ -7,7 +7,7 @@
     background-color: rgba(255, 122, 60, 0.3); }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0; }
@@ -15,9 +15,13 @@ body {
 h2 {
   font-size: 2rem;
   color: #233d50; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem; } }
 
 p {
-  color: #616161; }
+  color: #616161;
+  line-height: 1.6rem; }
 
 ul {
   list-style: none;
@@ -25,22 +29,23 @@ ul {
   padding: 0; }
 
 a {
-  text-decoration: none; }
-  a:visited {
-    color: inherit; }
+  text-decoration: none;
+  color: white; }
 
 a[href^="tel:"] {
   color: #233d50;
   text-decoration: none; }
 
 hr {
-  border: 0.5px solid #e5e5e5; }
+  border: 0.5px solid #e5e5e5;
+  max-width: 1170px;
+  width: 90%; }
 
 header {
   background-color: #233d50;
   color: white;
   height: 60px;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
   header nav {
     display: flex;
     justify-content: space-between; }
@@ -55,6 +60,13 @@ header {
           header nav .logo a img:hover {
             opacity: 0.8;
             transition: opacity 0.1s ease-in-out; }
+    header nav .toggleNav {
+      display: none;
+      font-size: 2.3rem;
+      margin: 0 1rem 0 0; }
+      @media screen and (max-width: 992px) {
+        header nav .toggleNav {
+          display: block; } }
     header nav ul {
       display: flex;
       font-size: 0.7rem;
@@ -62,6 +74,9 @@ header {
       margin-right: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.1rem; }
+      @media screen and (max-width: 992px) {
+        header nav ul {
+          display: none; } }
       header nav ul .nav-link {
         height: 100%;
         display: flex;
@@ -114,7 +129,7 @@ header {
   .hero-container .hero-content h1 {
     color: white;
     font-weight: black;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   .hero-container .hero-content p {
     color: white; }
   .hero-container .hero-content button {
@@ -136,6 +151,9 @@ header {
 .page-content {
   max-width: 1170px;
   margin: 5rem auto; }
+  @media screen and (max-width: 768px) {
+    .page-content {
+      margin-top: 2rem; } }
   .page-content .content-block {
     display: flex;
     height: 600px;
@@ -175,11 +193,17 @@ header {
   #why-choose p {
     text-align: center;
     width: 50%; }
+    @media screen and (max-width: 768px) {
+      #why-choose p {
+        width: 90%; } }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
   height: 400px; }
+  @media screen and (max-width: 992px) {
+    .grid {
+      height: auto; } }
   .grid .grid-item-container {
     display: flex;
     flex-direction: column;
@@ -188,6 +212,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 992px) {
+      .grid .grid-item-container {
+        width: 50%; } }
     .grid .grid-item-container .image-container {
       height: 70px;
       width: 100%;
@@ -198,35 +225,65 @@ header {
         max-width: 100%; }
     .grid .grid-item-container h4 {
       text-align: center;
-      width: 50%;
+      width: 85%;
+      font-weight: 600;
       margin-top: 0; }
 
 footer {
+  display: flex;
+  flex-direction: column;
   color: white;
   font-size: 0.75rem;
   height: 330px;
   background-color: #233d50; }
+  @media screen and (max-width: 992px) {
+    footer {
+      height: fit-content; } }
   footer .footer-top-container {
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
     height: 60%;
+    width: 90%;
     margin: 0 auto; }
-    footer .footer-top-container .col-5 {
-      font-family: 'Josefin Sans', sans-serif;
+    @media screen and (max-width: 992px) {
+      footer .footer-top-container {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column; } }
+    footer .footer-top-container .col-footer {
+      font-family: "Josefin Sans", sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      footer .footer-top-container .col-5 a {
+      justify-content: center;
+      width: auto; }
+      @media screen and (max-width: 992px) {
+        footer .footer-top-container .col-footer {
+          width: 100%;
+          align-items: center; } }
+      @media screen and (max-width: 992px) {
+        footer .footer-top-container .col-footer p {
+          margin: 0.3rem auto; } }
+      footer .footer-top-container .col-footer p a {
         text-transform: uppercase;
         color: white;
         transition: color 0.1s ease-in-out; }
-        footer .footer-top-container .col-5 a:hover {
+        footer .footer-top-container .col-footer p a:hover {
           color: #c8c8c8;
           transition: color 0.1s ease-in-out; }
-      footer .footer-top-container .col-5.copyright-container {
-        font-family: 'Montserrat', sans-serif; }
-        footer .footer-top-container .col-5.copyright-container .copyright {
+      footer .footer-top-container .col-footer.copyright-container {
+        display: flex;
+        font-family: "Montserrat", sans-serif; }
+        @media screen and (max-width: 992px) {
+          footer .footer-top-container .col-footer.copyright-container {
+            width: 235px;
+            margin: 2rem auto;
+            order: -1; } }
+        footer .footer-top-container .col-footer.copyright-container a {
+          height: fit-content; }
+          footer .footer-top-container .col-footer.copyright-container a img {
+            width: 235px; }
+        footer .footer-top-container .col-footer.copyright-container .copyright {
           color: white; }
   footer hr {
     max-width: 1170px;
@@ -239,12 +296,27 @@ footer {
     max-width: 1170px;
     margin: 0 auto;
     height: auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.65rem; }
+    @media screen and (max-width: 1200px) {
+      footer .footer-bottom-container {
+        flex-direction: column;
+        text-align: center; } }
+    @media screen and (max-width: 992px) {
+      footer .footer-bottom-container {
+        justify-content: center;
+        height: 180px; } }
     footer .footer-bottom-container p {
       color: white; }
+      @media screen and (max-width: 992px) {
+        footer .footer-bottom-container p {
+          margin: 0 5rem; } }
     footer .footer-bottom-container .social-links {
       height: 18px; }
+      @media screen and (max-width: 992px) {
+        footer .footer-bottom-container .social-links {
+          height: 25px;
+          margin: 2rem auto; } }
       footer .footer-bottom-container .social-links span {
         margin: 0 0.5rem; }
         footer .footer-bottom-container .social-links span img {
@@ -266,13 +338,33 @@ footer {
     height: 100%;
     color: #233d50;
     font-weight: bold; }
+    .sticky .sticky-container p {
+      margin-left: 4rem; }
+      @media screen and (max-width: 992px) {
+        .sticky .sticky-container p {
+          display: none; } }
+    .sticky .sticky-container a {
+      margin-left: 4rem;
+      color: #233d50; }
+    .sticky .sticky-container #letting-guide a {
+      color: white; }
     .sticky .sticky-container .letting-guide {
       display: flex;
       align-items: center;
       padding: 1rem;
       color: white;
       background-color: #fe5000;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
       margin: 0.5rem; }
+      @media screen and (max-width: 992px) {
+        .sticky .sticky-container .letting-guide {
+          width: 100%; }
+          .sticky .sticky-container .letting-guide a {
+            width: 100%;
+            text-align: center; } }
 
 .show {
   opacity: 1;

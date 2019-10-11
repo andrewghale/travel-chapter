@@ -26,12 +26,12 @@
             text-transform: uppercase;
         }
         h1 {
-            color: white;
-            font-weight: black;
-            font-family: 'Montserrat', sans-serif;
+            color: $white;
+            font-weight: $black;
+            font-family: $secondary-font
         }
         p {
-            color: white;
+            color: $white;
         }
         button {
             background-color: $orange;
@@ -40,7 +40,7 @@
             letter-spacing: 0.2rem;
             cursor: pointer;
             border: none;
-            color: white;
+            color: $white;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -56,6 +56,9 @@
 .page-content {
     max-width: 1170px;
     margin: 5rem auto;
+    @media screen and (max-width: $bp-tablet) {
+        margin-top: 2rem;
+    }
     .content-block {
         display: flex;
         height: 600px;
@@ -101,6 +104,9 @@
     p {
         text-align: center;
         width: 50%;
+        @media screen and (max-width: $bp-tablet) {
+            width: 90%;
+        }
     }
 }
 
@@ -108,6 +114,9 @@
     display: flex;
     flex-wrap: wrap;
     height: 400px;
+    @media screen and (max-width: $bp-large) {
+        height: auto;
+    }
     .grid-item-container {
         display: flex;
         flex-direction: column;
@@ -116,6 +125,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: $bp-large) {
+            width: 50%;
+        }
         .image-container {
             height: 70px;
             width: 100%;
@@ -128,7 +140,8 @@
         }
         h4 {
             text-align: center;
-            width: 50%;
+            width: 85%;
+            font-weight: 600;
             margin-top: 0;
         }
     }
