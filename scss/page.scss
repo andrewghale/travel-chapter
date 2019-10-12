@@ -18,6 +18,7 @@
         @media screen and (max-width: $bp-tablet) {
             font-size: 0.8rem;
             left: 9%;
+            top: 18%;
         }
         .brand-call {
             color: $orange-hover;
@@ -32,6 +33,18 @@
         }
         p {
             color: $white;
+        }
+        .hero-contact {
+            margin: 2rem 0;
+            .fas {
+                margin: 0 2rem 0 0;
+            }
+            a {
+                height: 40px;
+                font-weight: 600;
+                font-size: 1.4rem;
+                color: $white;
+            }
         }
         button {
             background-color: $orange;
@@ -90,8 +103,8 @@
                 width: auto;
                 margin: 0 1rem;
             }
-            h3 {
-                margin: 4rem 0 3rem 0;
+            h2 {
+                margin: 3rem 0 3rem 0;
             }
         }
     }
@@ -108,41 +121,40 @@
             width: 90%;
         }
     }
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    height: 400px;
-    @media screen and (max-width: $bp-large) {
-        height: auto;
-    }
-    .grid-item-container {
+    .grid {
         display: flex;
-        flex-direction: column;
-        height: 50%;
-        width: 25%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        height: 400px;
         @media screen and (max-width: $bp-large) {
-            width: 50%;
+            height: auto;
         }
-        .image-container {
-            height: 70px;
-            width: 100%;
+        .grid-item-container {
             display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 25%;
+            flex-direction: column;
             justify-content: center;
-            img {
-                height: auto;
-                max-width: 100%;
+            align-items: center;
+            @media screen and (max-width: $bp-large) {
+                width: 50%;
             }
-        }
-        h4 {
-            text-align: center;
-            width: 85%;
-            font-weight: 600;
-            margin-top: 0;
+            .image-container {
+                height: 70px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            h4 {
+                text-align: center;
+                width: 85%;
+                font-weight: 600;
+                margin-top: 0;
+            }
         }
     }
 }

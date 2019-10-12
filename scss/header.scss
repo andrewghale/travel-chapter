@@ -44,14 +44,14 @@ header {
                 display: flex;
                 padding-right: 2rem;
                 transition: color 0.1s ease-in-out;
-                &:hover {
-                    color: $white-hover;
-                    transition: color 0.1s ease-in-out;
-                }
                 a {
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    &:hover {
+                        color: $white-hover;
+                        transition: color 0.1s ease-in-out;
+                    }
                 }
             }
             .owner-account {

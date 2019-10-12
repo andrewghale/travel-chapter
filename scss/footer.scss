@@ -89,6 +89,7 @@ footer {
         }
         p {
             color: $white;
+            margin-right: 2rem;
             @media screen and (max-width: $bp-large) {
                 margin: 0 5rem;
             }
@@ -96,11 +97,11 @@ footer {
         .social-links {
             height: 18px;
             @media screen and (max-width: $bp-large) {
-                height: 25px;
-                margin: 2rem auto;
+                margin: 2rem;
+                max-height: 25px;
             }
             span {
-                margin: 0 0.5rem;
+                margin: 0.5rem;
                 img {
                     height: 100%;
                 }
